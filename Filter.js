@@ -53,7 +53,7 @@ module.exports = class {
         
         let [l, r] = [[], []]
         
-        for (let term of q.search) {
+        for (let term of search) {
             if (term.type == 'date') continue
             l.push (term.expr)
             r.push (term.value)
