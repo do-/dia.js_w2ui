@@ -35,7 +35,7 @@ module.exports = class {
         }
         else {
         
-            s.value = s.value.trim ()            
+            s.value = String (s.value).trim ()            
             if (s.expr.indexOf ('LIKE') > -1) s.value = s.value.replace (/[\*\s]+/g, '%')
             if (s.type == 'date') s.value = dt_iso (s)
         
